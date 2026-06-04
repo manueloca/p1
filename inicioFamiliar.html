@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroCare - Registro Familiar</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9fb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #5a2d82;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #7a3eb0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #5a2d82;
+    }
+
+    .link {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #7a3eb0;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Crear cuenta para familiar</h2>
+    <form>
+      <div class="form-group">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Ej. Juan Pérez" required>
+      </div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="ejemplo@correo.com" required>
+      </div>
+      <div class="form-group">
+        <label>Parentesco con el paciente</label>
+        <input type="text" placeholder="Ej. Hermano, Madre..." required>
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" placeholder="********" required>
+      </div>
+      <div class="form-group">
+        <label>Confirmar contraseña</label>
+        <input type="password" placeholder="********" required>
+      </div>
+      <button type="submit">Crear cuenta</button>
+      <a href="#" class="link">¿Ya formas parte de NeuroCare? Iniciar sesión</a>
+    </form>
+  </div>
+</body>
+</html>
